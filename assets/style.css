@@ -163,9 +163,9 @@ img{
 
 .nav{
     max-width: 968px;
-    height: var(--header-height)
+    height: var(--header-height);
     display: flex;
-    justtify-content:space-between;
+    justify-content:space-between;
     align-items: center;
 }
 
