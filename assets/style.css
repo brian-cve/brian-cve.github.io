@@ -1,0 +1,189 @@
+/*===================== GOOGLE FONTS ==================================--*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/*===================== VARIABLES CSS ==================================--*/
+
+
+:root{
+    --header-height: 5rem;
+/*==================== COLORS ==================================--*/
+/*Principal color*/
+
+--hue-color:211;
+
+/*HSL Color made*/
+--first-color:hsl(var(--hue-color), 71%, 46%);
+--first-color-second: hsl(var(--hue-color), 71%, 46%);
+--first-color-alt: hsl(var(--hue-color), 59%, 35%);
+--first-color-lighter: hsl(var(--hue-color), 95%, 85%);
+--title-color:hsl(var(--hue-color), 8%, 15%);
+--text-color: hsl(var(--hue-color), 3%, 21%);
+--text-color-light: hsl(var(--hue-color), 8%, 65%);
+--input-color:hsl(var(--hue-color), 70%, 96%);
+--body-color: hsl(var(--hue-color), 60%, 99%);
+--container-color:#fff;
+
+/*fonts*/
+--body-font: 'Poppins', sans-serif;
+
+
+--big-font-size:3.2rem;
+--h1-font-size:2.4rem;
+--h2-font-size:2.0rem;
+--h3-font-size:1.8rem;
+--normal-font-size:1.2rem;
+--small-font-size:1.0rem;
+--smaller-font-size:0.8rem;
+
+/*font weight*/
+
+--font-medium:500;
+--font-semi-bold: 600;  
+
+/*margenes bottom*/
+
+--mb-0-25: 0.4rem;
+--mb-0-5: 0.8rem;
+--mb-0-75: 1.2rem;
+--mb-1: 1.6rem;
+--mb-1-5: 2.4rem;
+--mb-2: 3.2rem;
+--mb-2-5: 4rem;
+--mb-3: 4.8rem;
+
+/*========== Z index ============*/
+
+--z-tooltip:10;
+--z-fixed:100;
+--z-modal:1000;
+
+/*========== Font Size for large Devices ============*/
+
+@media screen {min-width: 968px;
+    
+    --big-font-size:3.8rem;
+    --h1-font-size:2.8rem;
+    --h2-font-size:2.4rem;
+    --h3-font-size:2rem;
+    --normal-font-size:1.6rem;
+    --small-font-size:1.4rem;
+    --smaller-font-size:1.2rem;
+
+    }
+}
+
+/*========== BASE ============*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+
+    color: var(--text-color); 
+    margin: 0 0 var(--header-height) 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+     
+}
+
+h1,h2,h3,h4{
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.section{
+    padding: 2rem 0 4rem;
+}
+
+.section_title{
+    font-size: var(--h1-font-size);
+}
+
+.section_subtitle{
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
+}   
+
+.section_title,
+.section_subtitle{
+    text-align: center;
+}
+
+/*========== LAYOUT ============*/
+
+.container{ 
+    max-width: 760px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
+.grid{
+    display: grid;
+    gap:1.5rem
+}
+
+/*========== gap es el espacio que existe entre las columnas
+                    que se forman en el grid layout ============*/
+
+.header{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
+
+/*========== NAV ============*/
+
+.nav{
+    max-width: 968px;
+    height: var(--header-height)
+    display: flex;
+    justtify-content:space-between;
+    align-items: center;
+}
+
+.nav_logo,
+.nav_toggle{
+    color:var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.nav_logo:hover{
+    color:var(--first-color);
+}
+
+.nav_toggle{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.nav_toggle:hover{
+    color: var(--first-color);
+}
