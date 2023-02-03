@@ -9,7 +9,7 @@
 /*==================== COLORS ==================================--*/
 /*Principal color*/
 
---hue-color:211;
+--hue-color:190;
 
 /*HSL Color made*/
 --first-color:hsl(var(--hue-color), 71%, 46%);
@@ -27,13 +27,13 @@
 --body-font: 'Poppins', sans-serif;
 
 
---big-font-size:3.2rem;
---h1-font-size:2.4rem;
---h2-font-size:2.0rem;
---h3-font-size:1.8rem;
---normal-font-size:1.2rem;
---small-font-size:1.0rem;
---smaller-font-size:0.8rem;
+--big-font-size:2rem;
+--h1-font-size:1.5rem;
+--h2-font-size:1.25rem;
+--h3-font-size:1.125rem;
+--normal-font-size: .938rem;
+--small-font-size: .813rem;
+--smaller-font-size: .75rem;
 
 /*font weight*/
 
@@ -61,13 +61,13 @@
 
 @media screen {min-width: 968px;
     
-    --big-font-size:3.8rem;
-    --h1-font-size:2.8rem;
-    --h2-font-size:2.4rem;
-    --h3-font-size:2rem;
-    --normal-font-size:1.6rem;
-    --small-font-size:1.4rem;
-    --smaller-font-size:1.2rem;
+    --big-font-size:3rem;
+    --h1-font-size:2.25rem;
+    --h2-font-size:1.5rem;
+    --h3-font-size:1.25rem;
+    --normal-font-size:1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
 
     }
 }
@@ -296,4 +296,62 @@ img{
     color: var(--text-color);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-0-75);
+}
+
+.home_description{
+    margin-bottom: var(--mb-2);
+}
+
+.home_scroll{
+    display: none;
+}
+
+.home_scroll-button{
+    color: var(--first-color);
+    transition: .3s;
+}
+
+.home_scroll-button:hover{
+    transform: translateY(.25rem);
+}
+
+.home_scroll-mouse{
+    font-size: 2rem;
+}
+
+.home_scroll-name{
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    margin-right: var(--mb-0-25);
+}
+
+.home_scroll-arrow{
+    font-size: 1.25rem;
+}
+
+/*========== BUTTONS ============*/
+
+.button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+}
+
+.button:hover{
+    background-color: var(--first-color-alt);
+}
+
+.button_icon{
+    font-size: 1.25rem;
+    margin-left: var(--mb-0-5);
+    transition: .3s;
+}
+
+.button--flex{
+    display: inline-flex;
+    align-items: center;
 }
