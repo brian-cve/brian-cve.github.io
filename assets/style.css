@@ -9,7 +9,7 @@
 /*==================== COLORS ==================================--*/
 /*Principal color*/
 
---hue-color:190;
+--hue-color:301;
 
 /*HSL Color made*/
 --first-color:hsl(var(--hue-color), 71%, 46%);
@@ -49,7 +49,7 @@
 --mb-1-5: 2.4rem;
 --mb-2: 3.2rem;
 --mb-2-5: 4rem;
---mb-3: 4.8rem;
+--mb-3: 2rem;
 
 /*========== Z index ============*/
 
@@ -111,13 +111,13 @@ a{
 }
 
 img{
-    max-width: 100%;
+    max-width:100%;
     height: auto;
 }
 
 
 .section{
-    padding: 2rem 0 4rem;
+    padding: 2rem 0rem 2rem;
 }
 
 .section_title{
@@ -355,3 +355,62 @@ img{
     display: inline-flex;
     align-items: center;
 }
+
+/*========== About ============*/
+
+.about_img{
+    width:200px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.about_description{
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about_info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about_info-title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
+
+.about_info-name{
+    font-size: var(--smaller-font-size);
+}
+
+.about_info-title,
+.about_info-name{
+    display: block;
+    text-align: center;
+}
+
+.about_buttons{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*========== Skills ============*/
+
+.skills_container{
+    row-gap: 0;
+}
+
+.skills_header{
+    display:flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+
+}
+
+.skills_icon{}
