@@ -7,6 +7,9 @@
     <!--===================== UNICONS ==================================-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!--===================== SWIPER CSS ==================================-->
+
+    <link rel="stylesheet" href="/assets/swiper-bundle.min.css">
+
     <!--===================== CSS ==================================-->
     <link rel="stylesheet" href="/assets/style.css">
     <title>Brian Rodriguez Portfolio</title>
@@ -118,10 +121,8 @@
             </div>
         </div>    
     </section>
-
  <!--=====================  ABOUT  ==================================-->
-
-        <section class="about section" id="about">
+    <section class="about section" id="about">
             <h2 class="section_title">About Menu</h2>
             <span class="section_subtitle">My introduction</span>
             <div class="about_container container grid">
@@ -160,11 +161,9 @@
 
                 </div>
             </div>
-        </section>
-
+    </section>
 <!--===================== SKILLS ==================================-->
-
-<section class="skills section" id="skills">
+    <section class="skills section" id="skills">
 
     <h2 class="section_title">Skills</h2>
     <span class="section_subtitle">My technical level</span>
@@ -414,12 +413,9 @@
 
             </div>
         </div>
-     </section>
-
-
+    </section>
 <!--===================== QUALIFICATION ==================================-->
-
-<section class="qualification section">
+    <section class="qualification section">
     <h2 class="section_title">Qualification</h2>
     <span class="section_subtitle">My personal Journey </span>
 
@@ -546,11 +542,9 @@
                 </div>
                 
         </div>
-</section>
-
+    </section>
 <!--===================== SERVICES ==================================-->
-
-<section class="services section" id="services">
+    <section class="services section" id="services">
     <h2 class="section_title">Services</h2>
     <span class="section_subtitle"></span>
 
@@ -630,7 +624,89 @@
 
     </div>
 
-</section>
+    </section>
+<!--===================== PORTFOLIO ==================================-->
+    <section class="portfolio section" id="portfolio">
+    <h2 class="section_title">Portfolio</h2>
+    <span class="section_subtitle">Most recent work</span>
+
+        <div class="portfolio_container container swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!--===================== PORTFOLIO 1==================================-->   
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="/assets/pexels-rahul-pandit-2078147.jpg" alt="" class="portfolio_img">
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Modern Website</h3>
+                            <p class="portfolio_description">
+                                Website adaptable to all devices, with ui components
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio_button">
+                                Demo
+                                <i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--===================== PORTFOLIO 2==================================-->   
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="/assets/pexels-rahul-pandit-2078147.jpg" alt="" class="portfolio_img">
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Brand Design</h3>
+                            <p class="portfolio_description">
+                                Website adaptable to all devices, with ui components
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio_button">
+                                Demo
+                                <i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                         <!--===================== PORTFOLIO 3==================================-->               
+                         <div class="portfolio_content grid swiper-slide">
+                            <img src="/assets/pexels-rahul-pandit-2078147.jpg" alt="" class="portfolio_img">
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">Brand illustration</h3>
+                                <p class="portfolio_description">
+                                    Website adaptable to all devices, with ui components
+                                </p>
+                                <a href="#" class="button button--flex button--small portfolio_button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
+            </div>
+<!--===================== ARROWS ==================================--> 
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </section>
+<!--===================== PROJECT IN MIND ==================================-->
+    <section class="project section">
+        <div class="project_bg">
+            <div class="project_container container grid">
+                <div class="project_data">
+                        <h2 class="project_title">Portfolio</h2>
+                        <p class="project_description">Most recent work</p>
+                     <a href="#contact" class="button button--flex button--white">
+                        Contact Me
+                         <i class="uil uil-message project icon button_icon"></i>
+                        </a>
+                </div>
+                    <img src="/assets/IMG_4002.png" alt="" class="project_img">
+            </div>
+         </div>
+    </section>
+
+    
+<!--===================== SWIPER JS ==================================-->
+
+<script src="/assets/swiper-bundle.min.js"></script>
 
 <!--===================== MAINJS ==================================-->
     <script async src="/assets/main.js"></script>
