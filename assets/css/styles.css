@@ -529,10 +529,11 @@ body.light-theme {
   font-size: var(--tiny-font-size);
 }
 
+
 /*=============== SERVICES ===============*/
 .services__container {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  display: flex;
+  justify-content: center;
   padding-top: 1rem;
 }
 
@@ -733,7 +734,7 @@ body.light-theme {
 
 /*=============== CONTACT ===============*/
 .contact__container {
-  row-gap: 3rem;
+  display: flex;
   padding-bottom: 3rem;
 }
 
@@ -744,7 +745,7 @@ body.light-theme {
 }
 
 .contact__info {
-  display: grid;
+  display: flex;
   gap: 1rem;
 }
 
@@ -1012,7 +1013,7 @@ body.light-theme {
   }
 
   .section {
-    padding: 6.5rem  0 1rem;
+    padding: 4.5rem  0 1rem;
   }
   .section__title {
     margin-bottom: 3.5rem;

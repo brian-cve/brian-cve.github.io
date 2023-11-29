@@ -29,6 +29,7 @@ modalClose.forEach((mc) =>{
 	})
 })
 
+
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 let mixerPortfolio = mixitup('.work__container', {
     selectors: {
@@ -38,6 +39,8 @@ let mixerPortfolio = mixitup('.work__container', {
         duration: 300
     }
 });
+
+
 
 /* Link active work */ 
 const linkWork = document.querySelectorAll('.work__item')
