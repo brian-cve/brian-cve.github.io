@@ -118,7 +118,28 @@
         });
       });
     });
+    // Vívolo: el sol gira mientras se recorre el cielo
+    mm.add('(prefers-reduced-motion: no-preference)', () => {
+      const sol = $('[data-sol]');
+      if (sol) gsap.to(sol, { rotation: 60, ease: 'none', scrollTrigger: { trigger: sol, start: 'top bottom', end: 'bottom top', scrub: true } });
+    });
     addEventListener('load', () => ScrollTrigger.refresh());
+  }
+
+  // Web: el módulo a la vista enciende su pantalla y sus tablas
+  const flow = $('[data-flow]');
+  if (flow) {
+    const steps = $$('.step', flow), shots = $$('.flow__screens img', flow);
+    const show = (i) => {
+      const on = steps[i].dataset.on.split(' ');
+      steps.forEach((s, n) => s.classList.toggle('on', n === i));
+      shots.forEach((s, n) => s.classList.toggle('on', n === i));
+      $$('[data-node]', flow).forEach((g) => g.classList.toggle('on', on.includes(g.dataset.node)));
+      $$('.map path', flow).forEach((e) => e.classList.toggle('on', on.includes(e.dataset.a) && on.includes(e.dataset.b)));
+    };
+    show(0);
+    const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) show(steps.indexOf(e.target)); }), { rootMargin: '-50% 0px -50% 0px' });
+    steps.forEach((s) => io.observe(s));
   }
 
   // Galería: con el mouse a la derecha avanza, a la izquierda regresa; más cerca del borde, más rápido

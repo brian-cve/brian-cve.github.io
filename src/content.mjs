@@ -21,8 +21,8 @@ export const ui = {
     en: 'Brian Rodríguez, designer and developer of games, websites and brands',
   },
   description: {
-    es: 'Portafolio de Brian Rodríguez (Medellín, Colombia): videojuegos en Unity publicados en Steam, productos web, identidad de marca, ilustración e integración de IA.',
-    en: 'Portfolio of Brian Rodríguez (Medellín, Colombia): Unity games published on Steam, web products, brand identity, illustration and AI integration.',
+    es: 'Portafolio de Brian Rodríguez (Cali, Colombia): videojuegos en Unity publicados en Steam, productos web, identidad de marca, ilustración e integración de IA.',
+    en: 'Portfolio of Brian Rodríguez (Cali, Colombia): Unity games published on Steam, web products, brand identity, illustration and AI integration.',
   },
   skip: { es: 'Ir al contenido', en: 'Skip to content' },
   nav: {
@@ -49,6 +49,7 @@ export const ui = {
   status: { es: 'Estado', en: 'Status' },
   tools: { es: 'Herramientas', en: 'Tools' },
   team: { es: 'Equipo', en: 'Team' },
+  tables: { es: 'Tablas', en: 'Tables' },
 };
 
 export const hero = [
@@ -65,8 +66,8 @@ export const hero = [
     id: 'web', animal: 'ave', bg: '#00555e',
     word: { es: 'Webs', en: 'Websites' },
     text: {
-      es: 'Desde la web de un catador de café hasta una plataforma pública con postulaciones, visitas, firmas y evaluación de jurados.',
-      en: 'From a coffee taster’s site to a public platform with applications, field visits, signatures and jury scoring.',
+      es: 'Plataformas completas, de la interfaz en React a la base de datos en Supabase y SQL, como la que lleva una convocatoria pública en el Quindío.',
+      en: 'Complete platforms, from the React interface to the Supabase and SQL database, like the one running a public grant program in Quindío.',
     },
     cta: { es: 'Ver los proyectos web', en: 'See the web projects' },
   },
@@ -74,8 +75,8 @@ export const hero = [
     id: 'marca', animal: 'elefante', bg: '#1c2a86',
     word: { es: 'Marcas', en: 'Brands' },
     text: {
-      es: 'Empaques, ilustración, cartas, campañas y todo lo que hace que una marca se reconozca de un vistazo.',
-      en: 'Packaging, illustration, menus, campaigns and everything that makes a brand recognizable at a glance.',
+      es: 'Empaques, ilustración, campañas y todo lo que hace que una marca se reconozca de un vistazo.',
+      en: 'Packaging, illustration, campaigns and everything that makes a brand recognizable at a glance.',
     },
     cta: { es: 'Ver marcas e ilustración', en: 'See brands and illustration' },
   },
@@ -85,31 +86,36 @@ export const sections = {
   juegos: {
     h: { es: 'Cuatro juegos con Goat Studios', en: 'Four games with Goat Studios' },
     p: {
-      es: 'Arte, escenarios 3D, interfaz, modos de juego y la campaña con la que cada uno sale al mundo.',
-      en: 'Art, 3D environments, interface, game modes and the campaign that takes each one out into the world.',
+      es: 'Game design, programación en C#, arte, escenarios 3D, interfaz y la campaña con la que cada uno sale al mundo.',
+      en: 'Game design, C# programming, art, 3D environments, interface and the campaign that takes each one out into the world.',
     },
   },
-  proceso: { h: { es: 'En desarrollo', en: 'In development' } },
+  proceso: { h: { es: 'Próximos proyectos', en: 'Upcoming projects' } },
   navegador: {
     h: { es: 'Juégalos ahora mismo', en: 'Play them right now' },
-    p: { es: 'Los tres son gratis. BioCrisis y Rubymon abren en el navegador; Hazmat se descarga para Windows.', en: 'All three are free. BioCrisis and Rubymon open in the browser; Hazmat is a Windows download.' },
+    p: { es: 'Proyectos míos que puedes disfrutar ya y sin complicaciones. Los tres son gratis: BioCrisis y Rubymon abren en el navegador; Hazmat se descarga para Windows.', en: 'Projects of mine you can enjoy today, no hassle. All three are free: BioCrisis and Rubymon open in the browser; Hazmat is a Windows download.' },
     play: { es: 'Jugar', en: 'Play' },
   },
   web: {
-    h: { es: 'Productos web que trabajan todos los días', en: 'Web products that work every day' },
+    h: { es: 'Sistemas completos, de la pantalla a la base de datos', en: 'Complete systems, from screen to database' },
+    p: {
+      es: 'Diseño la interfaz, la programo y trabajo los datos que la sostienen: React y TypeScript al frente, Supabase y SQL detrás.',
+      en: 'I design the interface, code it and work on the data behind it: React and TypeScript up front, Supabase and SQL in the back.',
+    },
+    sql: { es: 'Fragmentos de SQL simplificados.', en: 'Simplified SQL excerpts.' },
   },
   gvc: {
     h: { es: 'GVC Coffee: un negocio, tres piezas', en: 'GVC Coffee: one business, three pieces' },
     p: {
-      es: 'Una web para formar, una tienda para vender y un panel que ordena las dos operaciones. Cada una con su propia identidad.',
-      en: 'A site to teach, a store to sell and a dashboard that keeps both operations in order. Each with its own identity.',
+      es: 'Un panel que ordena la operación sobre una sola base de datos, una web para formar y una tienda para vender.',
+      en: 'A dashboard that runs the operation on a single database, a site to teach and a store to sell.',
     },
   },
   marca: {
-    h: { es: 'Vívolo, de la bolsa a la camiseta', en: 'Vívolo, from the bag to the T-shirt' },
+    h: { es: 'Vívolo, un mundo entre la Sierra y el mar', en: 'Vívolo, a world between the Sierra and the sea' },
     p: {
-      es: 'Toda la estructura gráfica de una marca de café de especialidad en Santa Marta con envíos a Estados Unidos.',
-      en: 'The full graphic system of a specialty coffee brand in Santa Marta that ships to the United States.',
+      es: 'El universo ilustrado que construí para una marca de café de especialidad de Santa Marta con envíos a Estados Unidos: su gente, sus paisajes y sus rituales.',
+      en: 'The illustrated universe I built for a specialty coffee brand from Santa Marta that ships to the United States: its people, landscapes and rituals.',
     },
   },
   ilustracion: {
@@ -122,8 +128,8 @@ export const sections = {
       {
         h: { es: 'Dentro del producto', en: 'Inside the product' },
         p: {
-          es: 'BIM ARaS, para 3DVES: un asistente de IA dentro de Autodesk Revit que ayuda a generar sistemas MEP. Para GVC Coffee diseñé la arquitectura de un agente de ventas por WhatsApp que comparte catálogo con la web.',
-          en: 'BIM ARaS, for 3DVES: an AI assistant inside Autodesk Revit that helps generate MEP systems. For GVC Coffee I designed the architecture of a WhatsApp sales agent that shares its catalog with the website.',
+          es: 'Para GVC Coffee diseñé la arquitectura de un agente de ventas por WhatsApp que comparte catálogo con la web.',
+          en: 'For GVC Coffee I designed the architecture of a WhatsApp sales agent that shares its catalog with the website.',
         },
       },
       {
@@ -146,19 +152,21 @@ export const sections = {
     h: { es: 'Administrador de formación, creativo de oficio', en: 'Trained in business, creative by trade' },
     p: {
       es: [
-        'Soy Brian Rodríguez, de Colombia, y trabajo desde Medellín. Estudié Administración de Empresas en la Universidad del Valle, interfaces en Platzi y desarrollo con Unity en Generation Colombia.',
+        'Soy Brian Rodríguez, de Colombia. Estudié Administración de Empresas en la Universidad del Valle, interfaces en Platzi y desarrollo con Unity en Generation Colombia.',
         'Esa mezcla me deja entrar a un proyecto por cualquier puerta: entender el negocio, dibujar la marca, diseñar la interfaz y construirla. Hablo español, inglés (B2) y portugués (B2).',
+        'Trabajo desde Cali, con la maleta siempre lista para ir a donde el proyecto me necesite.',
       ],
       en: [
-        'I’m Brian Rodríguez, from Colombia, working out of Medellín. I studied Business Administration at Universidad del Valle, interface design at Platzi and Unity development at Generation Colombia.',
+        'I’m Brian Rodríguez, from Colombia. I studied Business Administration at Universidad del Valle, interface design at Platzi and Unity development at Generation Colombia.',
         'That mix lets me enter a project through any door: understand the business, draw the brand, design the interface and build it. I speak Spanish, English (B2) and Portuguese (B2).',
+        'I work from Cali, with a bag always packed to go wherever the project needs me.',
       ],
     },
     jobsH: { es: 'Experiencia', en: 'Experience' },
     jobs: [
-      { who: 'Quindío Emprendedor', when: { es: 'Desde mayo de 2026', en: 'Since May 2026' }, role: { es: 'Desarrollador frontend', en: 'Frontend developer' }, p: { es: 'Construí cerca del 80 % de una plataforma que lleva de principio a fin un programa regional de emprendimiento: diez etapas, seis perfiles, rúbricas de jurados, documentos firmados y tableros.', en: 'Built about 80% of a platform that runs a regional entrepreneurship program end to end: ten stages, six roles, jury rubrics, signed documents and dashboards.' } },
+      { who: 'Quindío Emprendedor', when: { es: 'Desde mayo de 2026', en: 'Since May 2026' }, role: { es: 'Desarrollador frontend', en: 'Frontend developer' }, p: { es: 'Construí cerca del 80 % de una plataforma que lleva de principio a fin un programa regional de emprendimiento: diez etapas, siete perfiles, rúbricas de jurados, documentos firmados y tableros. Incluye SQL, permisos por fila y tiempo real en Supabase.', en: 'Built about 80% of a platform that runs a regional entrepreneurship program end to end: ten stages, seven roles, jury rubrics, signed documents and dashboards. Includes SQL, row-level permissions and realtime in Supabase.' } },
       { who: 'Vívolo', when: { es: 'Desde abril de 2026', en: 'Since April 2026' }, role: { es: 'Líder de marketing digital', en: 'Digital marketing lead' }, p: { es: 'Estrategia, contenido y pauta en Meta, TikTok y Google; fotografía y video con apoyo de IA; automatizaciones en n8n y medición con GA4 y Looker Studio.', en: 'Strategy, content and paid media on Meta, TikTok and Google; AI-assisted photography and video; n8n automation and measurement with GA4 and Looker Studio.' } },
-      { who: 'Goat Studios', role: { es: 'Arte, diseño y desarrollo de videojuegos', en: 'Game art, design and development' }, p: { es: 'The Dinner en Steam desde noviembre de 2025 y tres títulos más en camino.', en: 'The Dinner on Steam since November 2025, with three more titles on the way.' } },
+      { who: 'Goat Studios', when: { es: 'Desde febrero de 2024', en: 'Since February 2024' }, role: { es: 'Cofundador: game design, programación y arte', en: 'Co-founder: game design, programming and art' }, p: { es: 'The Dinner en Steam desde noviembre de 2025 y tres títulos más en camino.', en: 'The Dinner on Steam since November 2025, with three more titles on the way.' } },
       { who: 'CloudFleet', when: '2024 – 2025', role: { es: 'Especialista en marketing digital y diseño de marca', en: 'Digital marketing and brand design specialist' }, p: { es: 'Manual de marca aplicado a canales digitales, impresos y stands 3D; video, correo y blog; investigación UX e interfaces del tablero y del producto en Figma.', en: 'Brand manual rolled out across digital, print and 3D booths; video, email and blog; UX research and dashboard and product interfaces in Figma.' } },
       { who: 'Andovar', when: '2023 – 2024', role: { es: 'Especialista en producción digital', en: 'Digital production specialist' }, p: { es: 'Supervisé la localización e integración de más de 40 proyectos multimedia para audiencias globales, con 90 % de satisfacción.', en: 'I oversaw localization and integration of more than 40 multimedia projects for global audiences, with 90% satisfaction.' } },
       { who: 'Universidad del Valle', when: '2021 – 2022', role: { es: 'Coordinador de mercadeo y diseño digital', en: 'Marketing and digital design coordinator' }, p: { es: 'Dirigí una plataforma nueva de inscripción que redujo 86 % el tiempo de atención por persona y subió 50 % la conversión.', en: 'I led a new enrollment platform that cut service time per person by 86% and raised conversion by 50%.' } },
@@ -166,8 +174,8 @@ export const sections = {
     ],
     toolsH: { es: 'Con qué trabajo', en: 'What I work with' },
     tools: {
-      es: [['Juegos', 'Unity, C#, Blender, Aseprite, Phaser, Steamworks'], ['Web', 'TypeScript, React, Tailwind, Astro, Supabase, Vercel, Shopify, GSAP'], ['Diseño', 'Figma, Illustrator, Photoshop, InDesign, After Effects, Premiere'], ['Marketing', 'Meta Ads, TikTok Ads, Google Ads, SEO, GA4, Looker Studio'], ['IA', 'Claude Code, Codex, Lovable, n8n, Higgsfield, Magnific']],
-      en: [['Games', 'Unity, C#, Blender, Aseprite, Phaser, Steamworks'], ['Web', 'TypeScript, React, Tailwind, Astro, Supabase, Vercel, Shopify, GSAP'], ['Design', 'Figma, Illustrator, Photoshop, InDesign, After Effects, Premiere'], ['Marketing', 'Meta Ads, TikTok Ads, Google Ads, SEO, GA4, Looker Studio'], ['AI', 'Claude Code, Codex, Lovable, n8n, Higgsfield, Magnific']],
+      es: [['Juegos', 'Unity, C#, Blender, Aseprite, Phaser, Steamworks'], ['Web', 'TypeScript, React, Tailwind, Astro, Supabase, PostgreSQL, Vercel, Shopify, GSAP'], ['Diseño', 'Figma, Illustrator, Photoshop, InDesign, After Effects, Premiere'], ['Marketing', 'Meta Ads, TikTok Ads, Google Ads, SEO, GA4, Looker Studio'], ['IA', 'Claude Code, Codex, Lovable, n8n, Higgsfield, Magnific']],
+      en: [['Games', 'Unity, C#, Blender, Aseprite, Phaser, Steamworks'], ['Web', 'TypeScript, React, Tailwind, Astro, Supabase, PostgreSQL, Vercel, Shopify, GSAP'], ['Design', 'Figma, Illustrator, Photoshop, InDesign, After Effects, Premiere'], ['Marketing', 'Meta Ads, TikTok Ads, Google Ads, SEO, GA4, Looker Studio'], ['AI', 'Claude Code, Codex, Lovable, n8n, Higgsfield, Magnific']],
     },
   },
   contacto: {
@@ -201,10 +209,10 @@ export const projects = [
       en: 'The Dinner is Goat Studios’ first commercial game. The whole campaign turns on one idea: two faces under the same helmet, red and black, nothing in between.',
     },
     did: {
-      es: ['Identidad, logo y arte principal del juego', 'Campaña de lanzamiento: carteles, cuenta regresiva, cápsulas de Steam y kit de prensa', 'Piezas impresas para ferias: stand, camisetas y calcomanías', 'Piezas gráficas adaptadas a los idiomas de la tienda, que son once'],
-      en: ['Game identity, logo and key art', 'Launch campaign: posters, countdown, Steam capsules and press kit', 'Printed pieces for fairs: booth, T-shirts and stickers', 'Artwork adapted to the store’s eleven languages'],
+      es: ['Game design y diseño de niveles', 'Programación en C#: sistemas de juego, puzles, interacción y comportamientos de IA', 'Iluminación y secuencias cinemáticas', 'Identidad, logo y arte principal del juego', 'Campaña de lanzamiento: carteles, cuenta regresiva, cápsulas de Steam y kit de prensa', 'Piezas impresas para ferias: stand, camisetas y calcomanías', 'Piezas gráficas adaptadas a los idiomas de la tienda, que son once'],
+      en: ['Game and level design', 'C# programming: game systems, puzzles, interaction and AI behaviors', 'Lighting and cinematic sequences', 'Game identity, logo and key art', 'Launch campaign: posters, countdown, Steam capsules and press kit', 'Printed pieces for fairs: booth, T-shirts and stickers', 'Artwork adapted to the store’s eleven languages'],
     },
-    role: { es: 'Dirección de arte, identidad y campaña', en: 'Art direction, identity and campaign' },
+    role: { es: 'Game design, programación, dirección de arte y campaña', en: 'Game design, programming, art direction and campaign' },
     tools: 'Unity, C#, Photoshop, Illustrator, Blender', team: goat,
     link: { u: 'https://store.steampowered.com/app/3537410/The_Dinner/', l: { es: 'Ver en Steam', en: 'See on Steam' } },
   },
@@ -221,10 +229,10 @@ export const projects = [
       en: 'A multiplayer game where anything can blow up except, in theory, the bomb. Shared screen, online matches, achievements and full controller support.',
     },
     did: {
-      es: ['Modos de juego y ajustes: muerte súbita, gigante, vacas y bordes de mapas', 'Interfaz, iconos de poderes, gestos y pantallas de carga', 'Logo, cápsulas de Steam y capturas de tienda', 'Videos cortos y campaña de listas de deseados'],
-      en: ['Game modes and tuning: sudden death, giant, cows and map borders', 'Interface, power-up icons, emotes and loading screens', 'Logo, Steam capsules and store screenshots', 'Short videos and the wishlist campaign'],
+      es: ['Game design y programación en C# de modos: Captura la Bandera, Demolición y 2 contra 2', 'Muerte súbita con bordes que se cierran, cañones automáticos y parte de la IA de los bots', 'Programación de gestos, registro de eliminaciones, menú de pausa y localización', 'Diseño y construcción de mapas: Bogotá, Cali, Río y Buenos Aires', 'Interfaz, iconos de poderes, gestos y pantallas de carga', 'Logo, cápsulas de Steam y capturas de tienda', 'Videos cortos y campaña de listas de deseados'],
+      en: ['Game design and C# programming of modes: Capture the Flag, Demolition and 2 vs 2', 'Sudden death with closing borders, automatic cannons and part of the bot AI', 'Programming of emotes, kill feed, pause menu and localization', 'Map design and building: Bogotá, Cali, Rio and Buenos Aires', 'Interface, power-up icons, emotes and loading screens', 'Logo, Steam capsules and store screenshots', 'Short videos and the wishlist campaign'],
     },
-    role: { es: 'Arte, interfaz, modos de juego y campaña', en: 'Art, interface, game modes and campaign' },
+    role: { es: 'Game design, programación, arte, interfaz y campaña', en: 'Game design, programming, art, interface and campaign' },
     tools: 'Unity 6, C#, Blender, Illustrator, Photoshop', team: goat,
     link: { u: 'https://store.steampowered.com/app/4806170/Its_Not_a_Bomb/', l: { es: 'Añadir a deseados', en: 'Wishlist on Steam' } },
   },
@@ -241,15 +249,15 @@ export const projects = [
       en: 'A first-person gambling roguelite. Every three days a bigger quota lands; each wash is a bet on red, black or green, and upgrades repaint the wheel in your favor.',
     },
     did: {
-      es: ['Modelado de la lavadora-ruleta, la dispensadora y los billetes', 'Decoración, iluminación y shader del cuarto', 'Interfaz del juego, menú principal y computadora', 'Logo y material de tienda'],
-      en: ['Modeling of the roulette washer, the vending machine and the bills', 'Set dressing, lighting and shader for the room', 'Game interface, main menu and in-game computer', 'Logo and store artwork'],
+      es: ['Diseño de niveles, condiciones de victoria y derrota, y lógica de juego', 'Game design y programación del minijuego de disparos que se juega en el televisor', 'Programación en C# de la radio, la pantalla de la computadora, los objetos que se agarran y los menús', 'Modelado de la lavadora-ruleta, la dispensadora y los billetes', 'Decoración, iluminación y shader del cuarto', 'Interfaz del juego, menú principal y computadora', 'Logo y material de tienda'],
+      en: ['Level design, win and lose conditions, and game logic', 'Game design and programming of the shooter minigame played on the in-game TV', 'C# programming of the radio, computer screen, grabbable objects and menus', 'Modeling of the roulette washer, the vending machine and the bills', 'Set dressing, lighting and shader for the room', 'Game interface, main menu and in-game computer', 'Logo and store artwork'],
     },
-    role: { es: 'Arte 3D, escenario, interfaz e identidad', en: '3D art, environment, interface and identity' },
-    tools: 'Unity 6, URP, Blender, Illustrator', team: goat,
+    role: { es: 'Game design, programación, arte 3D, interfaz e identidad', en: 'Game design, programming, 3D art, interface and identity' },
+    tools: 'Unity 6, URP, C#, Blender, Illustrator', team: goat,
   },
   {
     slug: 'a-last-haul', tipo: 'juego', name: 'A Last Haul', color: '#1b2a3d', dark: '#080d14',
-    cover: 'haul/blue', video: 'haul/loop', gallery: ['haul/blue', 'haul/key', 'haul/alt', 'haul/road', 'haul/ui'],
+    cover: 'haul/blue', video: 'haul/loop', gallery: ['haul/road'],
     status: { es: 'Próximamente', en: 'Coming soon' },
     sum: {
       es: 'Terror al volante: una noche más en la carretera, café para no dormirse y algo que se sube a la cabina.',
@@ -260,11 +268,11 @@ export const projects = [
       en: 'You drive a truck at night down an endless road, with the look of late-nineties games. Keep an eye on sleep, speed, mirrors and the radio.',
     },
     did: {
-      es: ['Modelos, decoración de cabina y tablero de instrumentos', 'Pruebas de la estética PS1', 'Iconos y medidores de la interfaz', 'Logo y arte de portada'],
-      en: ['Models, cab dressing and dashboard instruments', 'PS1-look experiments', 'Interface icons and gauges', 'Logo and cover art'],
+      es: ['Diseño de niveles, condiciones de victoria y derrota, y lógica de juego', 'Programación en C# del volante con brazos animados por IK, el velocímetro y el muñeco que reacciona a la inercia del camión', 'Programación del HUD de cabina (hora, marchas, sueño y café) y del menú principal', 'Modelos, decoración de cabina y tablero de instrumentos', 'Pruebas de la estética PS1', 'Iconos y medidores de la interfaz', 'Logo y arte de portada'],
+      en: ['Level design, win and lose conditions, and game logic', 'C# programming of the steering wheel with IK-driven arms, the speedometer and the bobblehead that reacts to the truck’s inertia', 'Programming of the cab HUD (time, gears, sleep and coffee) and the main menu', 'Models, cab dressing and dashboard instruments', 'PS1-look experiments', 'Interface icons and gauges', 'Logo and cover art'],
     },
-    role: { es: 'Arte 3D, interfaz e identidad', en: '3D art, interface and identity' },
-    tools: 'Unity 6, Blender, Illustrator, Photoshop', team: goat,
+    role: { es: 'Game design, programación, arte 3D, interfaz e identidad', en: 'Game design, programming, 3D art, interface and identity' },
+    tools: 'Unity 6, C#, Blender, Illustrator, Photoshop', team: goat,
   },
   {
     slug: 'attack-on-zombie', tipo: 'proceso', name: 'Attack On Zombie', color: '#16303a', dark: '#0a111c', accent: '#39e6c8', cover: 'zombie/key',
@@ -278,16 +286,16 @@ export const projects = [
       en: 'A top-down mobile game with one rule above all others: a stable 30 FPS on a low to mid-range phone. Every effect has a budget and is measured on a real device.',
     },
     did: {
-      es: ['Diseño y programación del juego', 'Dirección de arte: baja poligonización, colores planos, noche lluviosa', 'Presupuesto técnico: batches, triángulos, memoria y cero basura por cuadro'],
+      es: ['Game design y programación del juego', 'Dirección de arte: baja poligonización, colores planos, noche lluviosa', 'Presupuesto técnico: batches, triángulos, memoria y cero basura por cuadro'],
       en: ['Game design and programming', 'Art direction: low poly, flat color, rainy night', 'Technical budget: batches, triangles, memory and zero garbage per frame'],
     },
-    role: { es: 'Diseño, arte y programación', en: 'Design, art and programming' },
+    role: { es: 'Game design, programación y arte', en: 'Game design, programming and art' },
     tools: 'Unity 6, URP, C#, Jobs y Burst',
   },
   {
-    slug: 'metal-machines', tipo: 'proceso', sinPagina: true, name: 'Metal Machines', color: '#4a3a2c', dark: '#241a12', accent: '#ffb000',
+    slug: 'metal-machines', tipo: 'proceso', sinPagina: true, name: 'Metal Machines', color: '#4a3a2c', dark: '#241a12', accent: '#ffb000', video: 'metal/loop',
     status: { es: 'En desarrollo', en: 'In development' },
-    sum: { es: 'Primeras imágenes muy pronto.', en: 'First images soon.' },
+    sum: { es: 'Combate de carros visto desde arriba: derriba rivales, encadena rachas y elige mejoras en cada nivel.', en: 'Top-down car combat: take down rivals, chain streaks and pick an upgrade at every level.' },
   },
   {
     slug: 'biocrisis', tipo: 'navegador', name: 'BioCrisis', color: '#2c3b2a', dark: '#10160f',
@@ -305,7 +313,7 @@ export const projects = [
       es: ['Motor y lógica en TypeScript puro, cubiertos por pruebas', 'Texturas, sprites, HUD y logo generados con código', 'Audio espacial y controles táctiles', 'Simulador que juega solo para medir el balance'],
       en: ['Engine and logic in pure TypeScript, covered by tests', 'Textures, sprites, HUD and logo generated in code', 'Spatial audio and touch controls', 'A simulator that plays on its own to measure balance'],
     },
-    role: { es: 'Diseño, arte y programación', en: 'Design, art and programming' },
+    role: { es: 'Game design, programación y arte', en: 'Game design, programming and art' },
     tools: 'TypeScript, Phaser, Vite, Vitest',
     link: { u: 'https://brian-cve.github.io/Biocrisis/', l: { es: 'Jugar BioCrisis', en: 'Play BioCrisis' } },
   },
@@ -325,7 +333,7 @@ export const projects = [
       es: ['Motor de combate y captura con pruebas automáticas', 'Animaciones por movimiento y partículas', 'Audio procedural con Web Audio: efectos y tres canciones', 'Logo y HUD dibujados por código'],
       en: ['Combat and capture engine with automated tests', 'Per-move animations and particles', 'Procedural audio with Web Audio: effects and three songs', 'Logo and HUD drawn in code'],
     },
-    role: { es: 'Diseño y programación', en: 'Design and programming' },
+    role: { es: 'Game design y programación', en: 'Game design and programming' },
     tools: 'TypeScript, Phaser, Vite, Tiled',
     link: { u: 'https://brian-cve.github.io/Pokimon2/', l: { es: 'Jugar Rubymon', en: 'Play Rubymon' } },
   },
@@ -341,19 +349,47 @@ export const projects = [
       es: 'En el futuro gobiernan las inteligencias artificiales y los jugadores fueron condenados. Encerrados en un manicomio, tienen que cooperar, esconderse, distraer y correr antes de que se acabe el tiempo.',
       en: 'In the future, AIs rule and the players have been convicted. Locked in an asylum, they must cooperate, hide, distract and run before time is up.',
     },
+    did: {
+      es: ['Diseño y programación de puzles', 'Diseño de niveles', 'Diseño de menús'],
+      en: ['Puzzle design and programming', 'Level design', 'Menu design'],
+    },
+    role: { es: 'Game design, programación de puzles y diseño de niveles y menús', en: 'Game design, puzzle programming, level and menu design' },
     tools: 'Unity, C#',
     team: { es: 'Laura C Correa P, carlos4rias, OffsetDev, Nico Parroquiano y Goat Studios', en: 'Laura C Correa P, carlos4rias, OffsetDev, Nico Parroquiano and Goat Studios' },
     link: { u: 'https://soybri.itch.io/hazmat', l: { es: 'Descargar Hazmat', en: 'Download Hazmat' } },
   },
   {
     slug: 'quindio-emprendedor', tipo: 'web', name: 'Quindío Emprendedor', color: '#0f5f3c', dark: '#06291a',
-    cover: 'quindio/panel', mobile: 'quindio/movil', thumbs: ['quindio/analiticas', 'quindio/pitch', 'quindio/usuarios'], gallery: ['quindio/home', 'quindio/movil'],
+    cover: 'quindio/panel', mobile: 'quindio/movil', gallery: ['quindio/home', 'quindio/movil'],
     note: { es: 'Los nombres, documentos, contactos y cifras de las pantallas fueron borrados para proteger a los participantes.', en: 'Names, ID numbers, contact details and figures were removed from the screens to protect participants.' },
     screens: [
       ['quindio/panel', { es: 'Gestión de postulantes', en: 'Applicant management' }, { es: 'El estado de cada persona de un vistazo, filtros por municipio, sector y etapa, exportación a Excel y PDF, y documentos que se regeneran en lote.', en: 'Everyone’s status at a glance, filters by town, sector and stage, Excel and PDF export, and documents regenerated in batches.' }],
       ['quindio/analiticas', { es: 'Analíticas', en: 'Analytics' }, { es: 'Avance de la convocatoria en tiempo real: inscritos por municipio, estado de las postulaciones y meta de beneficiarios.', en: 'Real-time progress: sign-ups by town, application status and the beneficiary target.' }],
       ['quindio/pitch', { es: 'Jornada de pitch', en: 'Pitch day' }, { es: 'Tres jurados califican por separado y la plataforma promedia las notas y ordena los resultados.', en: 'Three jurors score independently; the platform averages the scores and ranks the results.' }],
       ['quindio/usuarios', { es: 'Usuarios y roles', en: 'Users and roles' }, { es: 'Postulantes, gestores, evaluadores y administradores: cada perfil entra a lo que le corresponde.', en: 'Applicants, managers, evaluators and administrators: each profile sees what it should.' }],
+    ],
+    facts: {
+      es: 'En producción: 24 tablas con permisos por fila, siete perfiles de usuario y un flujo de diez etapas. Construida con Juan Hernández.',
+      en: 'In production: 24 tables with row-level permissions, seven user roles and a ten-stage workflow. Built with Juan Hernández.',
+    },
+    // Un módulo por pantalla: qué resuelve, qué tablas toca y la pieza de SQL (simplificada) que lo sostiene
+    flow: [
+      { shot: 'quindio/panel', on: ['postulantes', 'anexos', 'avisos'],
+        h: { es: 'Encontrar a la persona correcta', en: 'Finding the right person' },
+        p: { es: 'El equipo filtra por municipio, sector y etapa, y marca los casos importantes. Un índice parcial guarda solo los favoritos para listarlos rápido.', en: 'The team filters by town, sector and stage, and flags the cases that matter. A partial index keeps only the favorites so they list fast.' },
+        sql: "create index idx_favoritos\n  on postulantes (favorito)\n  where favorito = true;" },
+      { shot: 'quindio/analiticas', on: ['postulantes', 'evaluaciones'],
+        h: { es: 'Cifras que se mueven solas', en: 'Numbers that move on their own' },
+        p: { es: 'Cuando cambia una postulación o entra una nota, los tableros se actualizan en vivo. Supabase Realtime publica el cambio y nadie tiene que recargar.', en: 'When an application changes or a score comes in, the dashboards update live. Supabase Realtime publishes the change and nobody has to reload.' },
+        sql: "alter publication supabase_realtime\n  add table postulantes, evaluaciones;" },
+      { shot: 'quindio/pitch', on: ['usuarios', 'postulantes', 'evaluaciones', 'rubrica'],
+        h: { es: 'Tres jurados, una nota justa', en: 'Three jurors, one fair score' },
+        p: { es: 'Cada jurado califica por separado y el resultado es el promedio. La base impide dos notas del mismo jurado y calcula el puntaje sobre cien.', en: 'Each juror scores independently and the result is the average. The database blocks two scores from the same juror and computes the score out of one hundred.' },
+        sql: "alter table evaluaciones\n  add unique (postulante_id, jurado_numero),\n  add column puntaje_total numeric(5,2)\n    generated always as (\n      round(puntaje_pitch / 25 * 100, 2)\n    ) stored;" },
+      { shot: 'quindio/usuarios', on: ['usuarios', 'roles', 'postulantes', 'visitas'],
+        h: { es: 'Cada quien ve lo suyo', en: 'Everyone sees their own' },
+        p: { es: 'Los permisos viven en la base de datos, además de la pantalla. Un postulante consulta sus visitas y sus actas, nunca las de otra persona.', en: 'Permissions live in the database as well as in the interface. Applicants can read their own visits and records, never anyone else’s.' },
+        sql: "create policy \"Postulante ve sus visitas\"\n  on visitas for select\n  using (exists (\n    select 1 from postulantes p\n    where p.id = visitas.postulante_id\n      and p.user_id = auth.uid()\n  ));" },
     ],
     status: { es: 'En producción', en: 'In production' },
     sum: {
@@ -365,11 +401,11 @@ export const projects = [
       en: 'A support program for small businesses in Quindío needed its whole process in one place. The platform handles roles, PDF documents, assessments, jury scoring, signed visit records and automatic emails.',
     },
     did: {
-      es: ['Cerca del 80 % de la plataforma: registro, evaluación, pitch, visitas, caracterización, anexos y entregas', 'Interfaces adaptables y formularios validados', 'Capa de datos en Supabase: más de 80 migraciones y permisos para seis perfiles', 'Flujo de diez etapas: puntaje automático de documentos, rúbricas de pitch y selección de beneficiarios', 'Documentos oficiales en PDF con firma digital, regeneración en lote y exportación a Excel'],
-      en: ['About 80% of the platform: registration, evaluation, pitch, visits, characterization, annexes and deliverables', 'Responsive interfaces and validated forms', 'Supabase data layer: 80+ migrations and permissions for six roles', 'Ten-stage workflow: automatic document scoring, pitch rubrics and beneficiary selection', 'Official PDF documents with digital signature, bulk regeneration and Excel exports'],
+      es: ['Cerca del 80 % de la plataforma: registro, evaluación, pitch, visitas, caracterización, anexos y entregas', 'Interfaces adaptables y formularios validados', 'Base de datos en Supabase: módulos de pitch y de visitas en SQL, con tablas, restricciones, índices y permisos por fila', 'Analíticas en tiempo real con Supabase Realtime', 'Flujo de diez etapas: puntaje automático de documentos, rúbricas de pitch y selección de beneficiarios', 'Documentos oficiales en PDF con firma digital, regeneración en lote y exportación a Excel'],
+      en: ['About 80% of the platform: registration, evaluation, pitch, visits, characterization, annexes and deliverables', 'Responsive interfaces and validated forms', 'Supabase database: pitch and visits modules in SQL, with tables, constraints, indexes and row-level permissions', 'Live analytics with Supabase Realtime', 'Ten-stage workflow: automatic document scoring, pitch rubrics and beneficiary selection', 'Official PDF documents with digital signature, bulk regeneration and Excel exports'],
     },
-    role: { es: 'Desarrollador frontend', en: 'Frontend developer' },
-    tools: 'React, TypeScript, Vite, Tailwind, shadcn/ui, Supabase, Recharts, Vercel, Claude Code, Lovable',
+    role: { es: 'Desarrollo frontend y base de datos', en: 'Frontend and database development' },
+    tools: 'React, TypeScript, Vite, Tailwind, shadcn/ui, Supabase, PostgreSQL, Recharts, Vercel, Claude Code, Lovable',
     team: { es: 'Con Juan Hernández', en: 'With Juan Hernández' },
     link: { u: 'https://quindio-connect-hub.vercel.app', l: { es: 'Visitar la plataforma', en: 'Visit the platform' } },
   },
@@ -412,7 +448,7 @@ export const projects = [
     tools: 'Astro, Shopify, Illustrator',
   },
   {
-    slug: 'gvc-cerebro', tipo: 'gvc', name: 'GVC Cerebro', color: '#23324f', dark: '#0d1422',
+    slug: 'gvc-cerebro', tipo: 'gvc', wide: true, name: 'GVC Cerebro', color: '#23324f', dark: '#0d1422',
     cover: 'cerebro/panel', mobile: 'cerebro/movil', gallery: ['cerebro/panel', 'cerebro/comercial', 'cerebro/movil'],
     status: { es: 'Panel interno, valores ocultos por confidencialidad', en: 'Internal dashboard, values hidden for confidentiality' },
     sum: {
@@ -432,20 +468,19 @@ export const projects = [
   },
   {
     slug: 'vivolo', tipo: 'marca', name: 'Vívolo', color: '#1d3a8f', dark: '#0b1740',
-    cover: 'vivolo/family', gallery: ['vivolo/family', 'vivolo/bag-white', 'vivolo/bag-black', 'vivolo/drip', 'vivolo/ilus1', 'vivolo/ilus2', 'vivolo/ilus3', 'vivolo/ilus4', 'vivolo/tee', 'vivolo/menu', 'vivolo/postcard', 'vivolo/shipping', 'vivolo/social'],
-    bento: ['vivolo/bag-white', 'vivolo/ilus1', 'vivolo/drip', 'vivolo/family', 'vivolo/tee', 'vivolo/shipping', 'vivolo/menu', 'vivolo/bag-black', 'vivolo/ilus2'],
+    cover: 'vivolo/portada', mundo: true,
     status: { es: 'Marca en el mercado', en: 'Brand on the market' },
     sum: {
-      es: 'Empaques, ilustración, cartas, camisetas, postales y redes para una marca de café de especialidad.',
-      en: 'Packaging, illustration, menus, T-shirts, postcards and social media for a specialty coffee brand.',
+      es: 'Empaques, ilustración y redes para una marca de café de especialidad.',
+      en: 'Packaging, illustration and social media for a specialty coffee brand.',
     },
     what: {
-      es: 'Vívolo vive en Santa Marta y envía a Estados Unidos. El trabajo fue construir un lenguaje gráfico que funcionara igual en una bolsa, una carta de cocteles y un anuncio.',
-      en: 'Vívolo lives in Santa Marta and ships to the United States. The job was to build a graphic language that works the same on a bag, a cocktail menu and an ad.',
+      es: 'Vívolo vive en Santa Marta y envía a Estados Unidos. El trabajo fue construir un lenguaje gráfico que funcionara igual en una bolsa, una calcomanía y un anuncio.',
+      en: 'Vívolo lives in Santa Marta and ships to the United States. The job was to build a graphic language that works the same on a bag, a sticker and an ad.',
     },
     did: {
-      es: ['Sistema gráfico e ilustraciones de marca', 'Empaques: bolsas, drip bags y etiquetas por caficultor', 'Cartas, postales, camisetas, gorras y calcomanías', 'Estrategia digital, contenido y pauta en Meta, TikTok y Google', 'Fotografía de producto y video con apoyo de IA', 'Automatizaciones con n8n y medición con GA4 y Looker Studio'],
-      en: ['Graphic system and brand illustrations', 'Packaging: bags, drip bags and labels per grower', 'Menus, postcards, T-shirts, caps and stickers', 'Digital strategy, content and paid media on Meta, TikTok and Google', 'AI-assisted product photography and video', 'n8n automation and measurement with GA4 and Looker Studio'],
+      es: ['Sistema gráfico e ilustraciones de marca', 'Empaques: bolsas, drip bags y etiquetas por caficultor', 'Escenas, personajes y calcomanías', 'Estrategia digital, contenido y pauta en Meta, TikTok y Google', 'Fotografía de producto y video con apoyo de IA', 'Automatizaciones con n8n y medición con GA4 y Looker Studio'],
+      en: ['Graphic system and brand illustrations', 'Packaging: bags, drip bags and labels per grower', 'Scenes, characters and stickers', 'Digital strategy, content and paid media on Meta, TikTok and Google', 'AI-assisted product photography and video', 'n8n automation and measurement with GA4 and Looker Studio'],
     },
     role: { es: 'Líder de marketing digital, diseño e ilustración', en: 'Digital marketing lead, design and illustration' },
     tools: 'Illustrator, Photoshop, Premiere, Figma, Higgsfield, Magnific, n8n, Meta Ads, Google Ads, TikTok Ads',
@@ -463,6 +498,50 @@ export const wall = [
   ['ilustracion/personajes', { es: 'Diseño de personajes', en: 'Character design' }],
   ['ilustracion/mundomujer', { es: 'Mundo Mujer, curso interactivo', en: 'Mundo Mujer, interactive course' }],
   ['ilustracion/tori', { es: 'Tori, app para emprendedores', en: 'Tori, app for entrepreneurs' }],
-  ['ilustracion/postly', { es: 'Postly, juego móvil para Colombia Games', en: 'Postly, mobile game for Colombia Games' }],
-  ['ilustracion/aras', { es: 'BIM ARaS para 3DVES', en: 'BIM ARaS for 3DVES' }],
 ];
+
+// Vívolo: las dos piezas de empaque y las 53 ilustraciones. [archivo, es, en]
+export const vivolo = {
+  empaques: [
+    ['bag-white', 'Bolsa blanca de café Vívolo con flores y la Sierra Nevada', 'White Vívolo coffee bag with flowers and the Sierra Nevada'],
+    ['drip', 'Sobre de Vívolo Drip Bag Coffee con montañas y cafetos', 'Vívolo Drip Bag Coffee sachet with mountains and coffee plants'],
+  ],
+  escenas: [
+    ['barista-estante', 'Barista con taza y portafiltro en la cafetería', 'Barista with cup and portafilter in the café'],
+    ['campero', 'Campero cargado de café entre cultivos', 'Off-roader loaded with coffee between crops'],
+    ['puerto', 'Veleros al atardecer en la bahía', 'Boats at sunset in the bay'],
+    ['vitrina', 'Vitrina de la cafetería con palma y pan', 'Café window with palm and bread'],
+    ['cocina', 'Mujer sirviendo café de una moka', 'Woman pouring coffee from a moka pot'],
+    ['noche', 'Carro clásico de noche frente al mar', 'Classic car at night by the sea'],
+    ['radio', 'Radio, cocteles de café y naranjas', 'Radio, coffee cocktails and oranges'],
+    ['barista-playa', 'Barista preparando café en la playa', 'Barista brewing coffee on the beach'],
+    ['cafeteria', 'Mostrador de la cafetería con chemex y empaques', 'Café counter with chemex and bags'],
+    ['isla', 'Isla del Caribe dentro de un vaso de café', 'Caribbean island inside a coffee glass'],
+    ['carretera', 'Carretera de la costa con palmeras y parasoles', 'Coastal road with palm trees and parasols'],
+    ['barista-finca', 'Barista en la finca entre cafetos y colibríes', 'Barista at the farm among coffee plants and hummingbirds'],
+    ['mesa', 'Café, sombrero y gafas sobre una mesa de madera', 'Coffee, hat and sunglasses on a wooden table'],
+    ['barra', 'Dos baristas en la barra de espresso', 'Two baristas at the espresso bar'],
+    ['estanteria', 'Estantería con flores, empaques y postres', 'Shelf with flowers, bags and desserts'],
+    ['ciudad-perdida', 'Ciudad Perdida rodeada de selva y cafetos', 'Ciudad Perdida surrounded by jungle and coffee plants'],
+    ['atardecer', 'Atardecer en el mar enmarcado por palmeras', 'Sunset at sea framed by palm leaves'],
+    ['caminante', 'Mujer caminando por la Sierra con una taza', 'Woman walking through the Sierra with a cup'],
+    ['taza-gigante', 'Mujer tomando café junto a una taza gigante', 'Woman drinking coffee beside a giant cup'],
+    ['barista-montana', 'Barista en la montaña con máquina de espresso', 'Barista in the mountains with an espresso machine'],
+    ['bahia', 'Bahía con muelle, faro y lanchas', 'Bay with pier, lighthouse and boats'],
+    ['noche-santa-marta', 'Noche de luna en Santa Marta', 'Moonlit night in Santa Marta'],
+    ['ventana', 'Dos cafés frente a una ventana a la Sierra', 'Two coffees before a window onto the Sierra'],
+    ['vitrina-mosaico', 'Vitrina de la cafetería con piso de ajedrez', 'Café window with a checkered floor'],
+  ],
+  calcomanias: [
+    ['moka-snob', 'Moka, Coffee Snob', 'Moka pot, Coffee Snob'], ['tucan-azul', 'Tucán azul', 'Blue toucan'], ['espresso', 'Máquina, Coffee = Life', 'Machine, Coffee = Life'],
+    ['sierra', 'La Sierra y el mar', 'The Sierra and the sea'], ['calma', 'Me, my peace and my coffee', 'Me, my peace and my coffee'], ['canasto', 'Canasto de cerezas de café', 'Basket of coffee cherries'],
+    ['molino-manual', 'Molino, Be Patient', 'Grinder, Be Patient'], ['croissant', 'Croissant', 'Croissant'], ['barista-vibes', 'Barista, Just coffee and vibes', 'Barista, Just coffee and vibes'],
+    ['chemex', 'Chemex', 'Chemex'], ['canasto-santa-marta', 'Canasto, Santa Marta en rojo', 'Basket, Santa Marta in red'], ['espresso-lateral', 'Máquina, Coffee Vibes', 'Machine, Coffee Vibes'],
+    ['sierra-sol', 'Sierra con sol', 'Sierra with sun'], ['molino', 'Molino de manivela', 'Hand-crank grinder'], ['mar', 'Sol sobre el mar', 'Sun over the sea'],
+    ['canastos-santa-marta', 'Canastos, Santa Marta en azul', 'Baskets, Santa Marta in blue'], ['moka', 'Moka', 'Moka pot'], ['palma', 'Hoja de palma', 'Palm leaf'],
+  ],
+  gente: [
+    ['pescador', 'Pescador con su red', 'Fisherman with his net'], ['barista-afro', 'Barista sirviendo filtrado', 'Barista pouring filter coffee'], ['caficultor', 'Caficultor con canasto de cerezas', 'Coffee grower with a basket of cherries'],
+    ['barista-delantal', 'Barista con delantal azul', 'Barista in a blue apron'], ['fotografa', 'Viajera tomando una foto', 'Traveler taking a photo'],
+  ],
+};

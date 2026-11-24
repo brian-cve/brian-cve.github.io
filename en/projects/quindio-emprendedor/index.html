@@ -18,7 +18,7 @@
 <meta name="theme-color" content="#0f5f3c">
 <link rel="icon" href="/media/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/fonts/gabarito.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/css/site.css?v=89d742ce">
+<link rel="stylesheet" href="/css/site.css?v=5aa32160">
 <script>document.documentElement.classList.add('js')</script>
 
 </head>
@@ -45,19 +45,34 @@
   <a class="btn btn--light" href="https://quindio-connect-hub.vercel.app" rel="noopener">Visit the platform</a>
   </div><div class="wrap case__cover"><img src="/media/quindio/panel.webp" alt="Quindío Emprendedor" width="1600" height="893" fetchpriority="high" decoding="async"></div></div>
 <div class="wrap case__body">
-  <dl class="facts"><div><dt>Role</dt><dd>Frontend developer</dd></div><div><dt>Status</dt><dd>In production</dd></div><div><dt>Tools</dt><dd>React, TypeScript, Vite, Tailwind, shadcn/ui, Supabase, Recharts, Vercel, Claude Code, Lovable</dd></div><div><dt>Team</dt><dd>With Juan Hernández</dd></div></dl>
-  <div class="case__text"><h2>What it is</h2><p>A support program for small businesses in Quindío needed its whole process in one place. The platform handles roles, PDF documents, assessments, jury scoring, signed visit records and automatic emails.</p><h2>What I did</h2><ul><li>About 80% of the platform: registration, evaluation, pitch, visits, characterization, annexes and deliverables</li><li>Responsive interfaces and validated forms</li><li>Supabase data layer: 80+ migrations and permissions for six roles</li><li>Ten-stage workflow: automatic document scoring, pitch rubrics and beneficiary selection</li><li>Official PDF documents with digital signature, bulk regeneration and Excel exports</li></ul></div>
+  <dl class="facts"><div><dt>Role</dt><dd>Frontend and database development</dd></div><div><dt>Status</dt><dd>In production</dd></div><div><dt>Tools</dt><dd>React, TypeScript, Vite, Tailwind, shadcn/ui, Supabase, PostgreSQL, Recharts, Vercel, Claude Code, Lovable</dd></div><div><dt>Team</dt><dd>With Juan Hernández</dd></div></dl>
+  <div class="case__text"><h2>What it is</h2><p>A support program for small businesses in Quindío needed its whole process in one place. The platform handles roles, PDF documents, assessments, jury scoring, signed visit records and automatic emails.</p><h2>What I did</h2><ul><li>About 80% of the platform: registration, evaluation, pitch, visits, characterization, annexes and deliverables</li><li>Responsive interfaces and validated forms</li><li>Supabase database: pitch and visits modules in SQL, with tables, constraints, indexes and row-level permissions</li><li>Live analytics with Supabase Realtime</li><li>Ten-stage workflow: automatic document scoring, pitch rubrics and beneficiary selection</li><li>Official PDF documents with digital signature, bulk regeneration and Excel exports</li></ul></div>
 </div>
-<div class="wrap screens"><figure id="panel"><img src="/media/quindio/panel.webp" alt="Quindío Emprendedor: Applicant management" width="1600" height="893" loading="lazy" decoding="async"><figcaption><h2>Applicant management</h2><p>Everyone’s status at a glance, filters by town, sector and stage, Excel and PDF export, and documents regenerated in batches.</p></figcaption></figure><figure id="analiticas"><img src="/media/quindio/analiticas.webp" alt="Quindío Emprendedor: Analytics" width="1600" height="918" loading="lazy" decoding="async"><figcaption><h2>Analytics</h2><p>Real-time progress: sign-ups by town, application status and the beneficiary target.</p></figcaption></figure><figure id="pitch"><img src="/media/quindio/pitch.webp" alt="Quindío Emprendedor: Pitch day" width="1600" height="892" loading="lazy" decoding="async"><figcaption><h2>Pitch day</h2><p>Three jurors score independently; the platform averages the scores and ranks the results.</p></figcaption></figure><figure id="usuarios"><img src="/media/quindio/usuarios.webp" alt="Quindío Emprendedor: Users and roles" width="1600" height="874" loading="lazy" decoding="async"><figcaption><h2>Users and roles</h2><p>Applicants, managers, evaluators and administrators: each profile sees what it should.</p></figcaption></figure><p class="screens__note">Names, ID numbers, contact details and figures were removed from the screens to protect participants.</p></div>
+<div class="wrap screens"><figure id="panel"><img src="/media/quindio/panel.webp" alt="Quindío Emprendedor: Applicant management" width="1600" height="893" loading="lazy" decoding="async"><figcaption><h2>Applicant management</h2><div><p>Everyone’s status at a glance, filters by town, sector and stage, Excel and PDF export, and documents regenerated in batches.</p><pre class="sql" tabindex="0"><code><b>create</b> <b>index</b> idx_favoritos
+  <b>on</b> postulantes (favorito)
+  <b>where</b> favorito = true;</code></pre></div></figcaption></figure><figure id="analiticas"><img src="/media/quindio/analiticas.webp" alt="Quindío Emprendedor: Analytics" width="1600" height="918" loading="lazy" decoding="async"><figcaption><h2>Analytics</h2><div><p>Real-time progress: sign-ups by town, application status and the beneficiary target.</p><pre class="sql" tabindex="0"><code><b>alter</b> <b>publication</b> supabase_realtime
+  <b>add</b> <b>table</b> postulantes, evaluaciones;</code></pre></div></figcaption></figure><figure id="pitch"><img src="/media/quindio/pitch.webp" alt="Quindío Emprendedor: Pitch day" width="1600" height="892" loading="lazy" decoding="async"><figcaption><h2>Pitch day</h2><div><p>Three jurors score independently; the platform averages the scores and ranks the results.</p><pre class="sql" tabindex="0"><code><b>alter</b> <b>table</b> evaluaciones
+  <b>add</b> <b>unique</b> (postulante_id, jurado_numero),
+  <b>add</b> <b>column</b> puntaje_total numeric(5,2)
+    <b>generated</b> <b>always</b> <b>as</b> (
+      round(puntaje_pitch / 25 * 100, 2)
+    ) <b>stored</b>;</code></pre></div></figcaption></figure><figure id="usuarios"><img src="/media/quindio/usuarios.webp" alt="Quindío Emprendedor: Users and roles" width="1600" height="874" loading="lazy" decoding="async"><figcaption><h2>Users and roles</h2><div><p>Applicants, managers, evaluators and administrators: each profile sees what it should.</p><pre class="sql" tabindex="0"><code><b>create</b> <b>policy</b> <i>&quot;Postulante ve sus visitas&quot;</i>
+  <b>on</b> visitas <b>for</b> <b>select</b>
+  <b>using</b> (<b>exists</b> (
+    <b>select</b> 1 <b>from</b> postulantes p
+    <b>where</b> p.id = visitas.postulante_id
+      <b>and</b> p.user_id = auth.uid()
+  ));</code></pre></div></figcaption></figure><p class="screens__note">Simplified SQL excerpts. Names, ID numbers, contact details and figures were removed from the screens to protect participants.</p></div>
+
 <div class="wrap shots"><figure><img src="/media/quindio/home.webp" alt="Quindío Emprendedor, home" width="1440" height="900" loading="lazy" decoding="async"></figure><figure><img src="/media/quindio/movil.webp" alt="Quindío Emprendedor, movil" width="390" height="844" loading="lazy" decoding="async"></figure></div>
 <a class="case__next" href="/en/projects/gustavo-valderrama/" style="--c:#3a2417"><span>Next project</span><strong>Gustavo Valderrama</strong></a>
 </main>
 <footer class="foot">
-  <p>Brian Rodríguez, Medellín</p>
+  <p>Brian Rodríguez, Cali</p>
   <ul><li><a href="https://www.linkedin.com/in/brian-rodriguez-game-designer/" rel="me noopener">LinkedIn</a></li><li><a href="https://github.com/brian-cve" rel="me noopener">GitHub</a></li><li><a href="https://www.behance.net/brian_cve" rel="me noopener">Behance</a></li><li><a href="https://soybri.itch.io/" rel="me noopener">itch.io</a></li><li><a href="https://instagram.com/soy_elbri" rel="me noopener">Instagram</a></li></ul>
 </footer>
 <script src="/js/gsap.min.js" defer></script>
 <script src="/js/ScrollTrigger.min.js" defer></script>
-<script src="/js/site.js?v=cbe19955" defer></script>
+<script src="/js/site.js?v=5347174c" defer></script>
 </body>
 </html>
